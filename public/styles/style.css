@@ -1,0 +1,464 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #064420;
+}
+
+/* header */
+
+.navbar{
+   
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;    
+}
+#hamburgerButton{
+    display: none;
+}
+.titleHeader h1{
+    font-size: 40px;
+ 
+}
+a {
+    text-decoration: none;
+    color: #064420;
+}
+.imgLogo {
+    width: auto;
+    height: 80px;
+    margin-top: 0px;
+    margin-left: 20px;
+    align-self: center;
+}
+.nav {
+    
+    height: 100%;
+    width: 100%;
+}
+.navlink:hover{
+    background-color: #e4efe7;
+}
+ul {
+    position: relative;
+    top: 10px;
+    
+    width: 100%;
+    
+    visibility: visible;
+    display: flex;
+    padding: 0px ;
+    margin: 0;
+    flex-direction: row;
+    
+    justify-content: flex-start;
+    font-size: 20px;
+}
+
+li {
+    padding: 20px 25px;
+    list-style-type: none;
+    height: 100%;
+    
+}
+
+
+.entete{
+    z-index: 10;
+    position: sticky;
+    top: 0px;
+    max-height: 189px;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.buttonContact{
+    background: #fd5f00;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+
+
+}
+.buttonContact a{
+   color: white;
+   font-size: 20px;
+    
+
+}
+.buttonAppel{
+    background: #005792;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+
+
+}
+.buttonAppel a{
+   color: white;
+   font-size: 20px;
+}
+/* */
+
+.textA{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 12%;
+    padding-bottom: 40px;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-right:35px;
+    box-shadow: 3px -3px 5px #ffffff81;
+    z-index: 7;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.837);
+    width: 25%;
+    height: auto;
+    position: absolute;
+    
+    border-radius: 5px;
+}
+.textA h2{
+    margin: 0;
+    color :#005792;
+    text-align: center;
+}
+.textA form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    z-index: 7;
+    color: #ffffff;
+    gap: 10px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.textA form input{
+    border-radius: 3px;
+    border: solid 1px grey;
+    padding: 5px;
+}
+.textA form textarea{
+    border-radius: 3px;  
+    padding: 5px;
+}
+.textA form button{
+    background: #fd5f00;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+.imgHeaderimg{
+    width: 100%; 
+    max-height: 653px;
+    
+    overflow: hidden;
+    object-fit: cover;
+}
+.imgHeader{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    
+}
+.stky{
+    position: fixed ;
+    right: 20px;
+    width: auto ;
+    height: 200px ;
+       
+    }
+/* Présentation */
+.presentation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.titlePresentation{
+    
+    width: auto;
+    margin: 0px 25px;
+
+}
+.h1Pres{
+    font-size: 30px;
+    text-align: center;
+}
+.textPres{
+
+}
+.imgPresentation{
+    height: 500px;
+}
+.imgPres{
+
+}
+/* Presentation video*/
+.video{
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.video video{
+    width: 95%;
+    height: 500px;
+    
+}
+/* carousel sol*/
+.carousel{
+    margin-top:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.carousel div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.carousel .imgCarousel{
+    width: 95%;
+    max-height: 400px;
+z-index: 4;
+    object-fit:cover;
+}
+.carousel h3{
+    z-index: 3;
+    max-width: 90%;
+    text-align: center;
+    position: absolute;
+    font-size: 70px;
+    
+    overflow:hidden;
+}
+.carousel h3:hover{
+    z-index: 5;
+   
+}
+.carousel .imgCarousel:hover{
+    z-index: 2;
+}
+.arrow{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100px;
+    width: auto;
+    right: 15px;
+    position: absolute;
+    z-index: 10;
+    
+}
+.arrowL{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100px;
+    width: auto;
+    left: 15px;
+    z-index: 10;
+    position: absolute;
+    transform: rotate(0.5turn);
+}
+.arrows{
+    opacity: 0.7;
+}
+.arrows:hover{
+    opacity: 0.9 ;
+   
+}
+/* connexion Form*/
+.connexionForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    z-index: 7;
+    color: #ffffff;
+    width: 400px;
+    gap: 30px;
+    height: auto;
+    border-radius: 20px;
+}
+.btn{
+    background: #fd5f00;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+.inputForm{
+    border-radius: 3px;
+    border: solid 1px grey;
+    padding: 5px;
+    font-size: 20px;
+}
+.connex{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background: rgba(119, 108, 108, 0.347);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.connexDiv{
+    border-radius: 20px;
+    background-color: #e4efe779;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width : 1200px) {
+    ul{
+        visibility: visible !important;
+    }
+}
+@media (max-width : 1200px) {
+
+    ul {
+        visibility: collapse;
+        position: absolute;
+        z-index: 10;
+        background: #f6f6e9;
+        display: flex;
+        padding: 0px ;
+        margin: 0;
+        flex-direction: column;
+        right: 0px;
+        top: 0px;
+        width: auto;
+        font-size: 30px;
+    }
+    .facebook{
+        
+    }
+    .entete{
+        gap: 10px;
+    }
+    .logoHamburger{
+        
+       right: 10px;
+       top: 10px;
+       z-index: 10;
+       
+    }
+    #hamburgerButton{
+       display: block;
+        border: none;
+        background: none;
+    }
+    li {
+        padding: 40px 25px;
+        list-style-type: none;
+        height: 100%;
+        
+    }
+    .header {
+        
+        top: auto;
+        right: 0;
+        left: 0;
+        
+        padding-left: 20px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: initial;
+        align-items: center;
+    }
+    .contact img{
+       
+        display: none;    
+    }
+    .imgLogo {
+        width:100px;
+        height: auto;
+        margin-top: 0px;
+    }
+    /*carousel*/
+    .carousel h3{
+        z-index: 3;
+        max-width: 90%;
+        text-align: center;
+        position: static;
+        font-size: 70px;
+        
+        overflow:hidden;
+    }
+    .carousel div{
+        
+        flex-direction: column;
+        
+    }
+    .carousel h3{
+        
+        font-size: 50px;
+        
+        
+    }
+}
+@media (max-width : 1000px) {
+/* Presentation*/
+    .presentation{
+    
+        flex-wrap: wrap;
+        
+    }
+    .imgPres{
+        max-width: 90%;
+        width: 90%;
+        }
+    .textA{
+        display: none;
+        
+    }
+    .buttonContact{
+        background: #fd5f00;
+        height: 30px;
+        width: 120px;
+        border: none;
+        border-radius: 5px;
+
+
+    }
+   
+    .buttonContact a{
+    color: white;
+    font-size: 15px;
+        
+
+    }
+    .buttonAppel{
+        background: #005792;
+        height: 30px;
+        width: 120px;
+        border: none;
+        border-radius: 5px;
+
+
+    }
+    .buttonAppel a{
+    color: white;
+    font-size: 15px;
+    }
+}
